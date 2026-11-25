@@ -33,6 +33,28 @@
     items.forEach(function (el) { io.observe(el); });
   }
 
+  // Menu page: category pills filter the panels (without JS they are plain jump links).
+  var tabs = document.querySelectorAll('.mx-tabs a[data-filter]');
+  var panels = document.querySelectorAll('.mx-panel[data-cat]');
+  if (tabs.length && panels.length) {
+    var bar = document.querySelector('.mx-tabs');
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function (e) {
+        e.preventDefault();
+        var f = tab.getAttribute('data-filter');
+        panels.forEach(function (p) { p.hidden = f !== 'all' && p.getAttribute('data-cat') !== f; });
+        tabs.forEach(function (t) {
+          var on = t === tab;
+          t.classList.toggle('active', on);
+          if (on) t.setAttribute('aria-current', 'true'); else t.removeAttribute('aria-current');
+        });
+        var body = document.querySelector('.mx-body');
+        var top = body.getBoundingClientRect().top + window.pageYOffset - bar.offsetHeight;
+        if (window.pageYOffset > top) window.scrollTo(0, top);
+      });
+    });
+  }
+
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 })();

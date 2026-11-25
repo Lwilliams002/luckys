@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=4">
+  <link rel="stylesheet" href="../css/styles.css?v=5">
   <script>document.documentElement.classList.remove('no-js');</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CPQCMRK8PL"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CPQCMRK8PL');</script>
@@ -48,7 +48,7 @@
     </div>
   </div>
 </header>
-<main id="main">
+<main id="main" class="menu-main">
 <section class="page-hero">
   <img class="floaty b1" src="../assets/img/bean-1.webp" alt="" width="246" height="218">
   <img class="floaty b2" src="../assets/img/bean-2.webp" alt="" width="248" height="265">
@@ -58,45 +58,139 @@
     <p>Welcome to Lucky’s Espresso &amp; Matcha Bar, your go-to espresso &amp; matcha bar in Miami for handcrafted drinks made with premium ingredients.</p>
   </div>
 </section>
-<nav class="menu-nav" aria-label="Menu categories"><div class="wrap"><ul><li><a href="#classics">Classics</a></li><li><a href="#matcha-bar">Matcha Bar</a></li><li><a href="#signatures">Signatures</a></li><li><a href="#refreshments">Refreshments</a></li><li><a href="#extras">Extras</a></li><li><a href="#bakery">Bakery</a></li></ul></div></nav>
-<section class="menu-section" id="classics">
-  <div class="wrap">
-    <div class="menu-head"><h2>Classics</h2></div>
-    <ul class="menu-list"><li class="menu-item"><h3>Double Espresso</h3><span class="price">3.85</span></li><li class="menu-item"><h3>Macchiato</h3><span class="price">4.25</span></li><li class="menu-item"><h3>Cortado</h3><span class="price">4.25</span></li><li class="menu-item"><h3>Flat White</h3><span class="price">5</span></li><li class="menu-item"><h3>Cappuccino</h3><span class="price">5</span></li><li class="menu-item"><h3>Latte</h3><span class="price">5.50</span><p>Served hot or iced</p></li><li class="menu-item"><h3>Americano</h3><span class="price">4</span><p>Served hot or iced</p></li></ul>
+<nav class="mx-tabs" aria-label="Menu categories"><div class="wrap"><ul>
+  <li><a href="#main" data-filter="all" class="active">All</a></li>
+  <li><a href="#classics" data-filter="classics">Classics</a></li>
+  <li><a href="#matcha-bar" data-filter="matcha-bar">Matcha Bar</a></li>
+  <li><a href="#signatures" data-filter="signatures">Signatures</a></li>
+  <li><a href="#refreshments" data-filter="refreshments">Refreshments</a></li>
+  <li><a href="#bakery" data-filter="bakery">Bakery</a></li>
+  <li><a href="#extras" data-filter="extras">Extras</a></li>
+</ul></div></nav>
+<div class="mx-body">
+<section class="mx-panel wrap" id="classics" data-cat="classics">
+  <div class="mx-head">
+    <h2>Classics</h2>
+    <p>The bold, concentrated craft of Italian espresso.</p>
+  </div>
+  <div class="mx-grid">
+    <div class="mx-feature mx-feature--cut">
+      <div class="mx-feature-text"><span>Classics</span><strong>Espresso, pulled with care</strong></div>
+      <img src="../assets/img/latte-cutout.webp" alt="An iced latte dusted with cocoa" width="647" height="610" loading="lazy">
+    </div>
+    <ul class="mx-items">
+      <li class="mx-card"><h3>Double Espresso</h3><div class="mx-foot"><span class="mx-price">$3.85</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Double Espresso online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Macchiato</h3><div class="mx-foot"><span class="mx-price">$4.25</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Macchiato online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Cortado</h3><div class="mx-foot"><span class="mx-price">$4.25</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Cortado online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Flat White</h3><div class="mx-foot"><span class="mx-price">$5</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Flat White online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Cappuccino</h3><div class="mx-foot"><span class="mx-price">$5</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Cappuccino online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Latte</h3><p>Served hot or iced</p><div class="mx-foot"><span class="mx-price">$5.50</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Latte online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Americano</h3><p>Served hot or iced</p><div class="mx-foot"><span class="mx-price">$4</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Americano online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+    </ul>
   </div>
 </section>
-<section class="menu-section" id="matcha-bar">
-  <div class="wrap">
-    <div class="menu-head"><h2>Matcha Bar</h2></div>
-    <ul class="menu-list"><li class="menu-item"><h3>Matcha</h3><span class="price">6.50</span><p>Served hot or iced</p></li><li class="menu-item"><h3>Matcha Lemonade</h3><span class="price">6.50</span></li><li class="menu-item"><h3>Matcha Cloud</h3><span class="price">6.50</span></li><li class="menu-item"><h3>Double Matcha</h3><span class="price">8</span></li></ul>
+<section class="mx-panel wrap flip" id="matcha-bar" data-cat="matcha-bar">
+  <div class="mx-head">
+    <h2>Matcha Bar</h2>
+    <p>Stone-milled matcha, whisked the way it has always been done.</p>
+  </div>
+  <div class="mx-grid">
+    <div class="mx-feature mx-feature--cut mx-feature--matcha">
+      <div class="mx-feature-text"><span>Matcha Bar</span><strong>Ceremonial grade, whisked to order</strong></div>
+      <img src="../assets/img/matcha-cutout.webp" alt="An iced matcha latte dusted with matcha powder" width="684" height="868" loading="lazy">
+    </div>
+    <ul class="mx-items">
+      <li class="mx-card"><h3>Matcha</h3><p>Served hot or iced</p><div class="mx-foot"><span class="mx-price">$6.50</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Matcha online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Matcha Lemonade</h3><div class="mx-foot"><span class="mx-price">$6.50</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Matcha Lemonade online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Matcha Cloud</h3><div class="mx-foot"><span class="mx-price">$6.50</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Matcha Cloud online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Double Matcha</h3><div class="mx-foot"><span class="mx-price">$8</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Double Matcha online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+    </ul>
   </div>
 </section>
-<section class="menu-section" id="signatures">
-  <div class="wrap">
-    <div class="menu-head"><h2>Signatures</h2><span>Coffee or matcha</span></div>
-    <ul class="menu-list"><li class="menu-item"><h3>Lucky-misu / Matcha-misu</h3><span class="price">10</span></li><li class="menu-item"><h3>Cinnamon Bun Iced Latte / Matcha</h3><span class="price">9</span></li><li class="menu-item"><h3>Strawberry Shortcake Matcha</h3><span class="price">9</span></li><li class="menu-item"><h3>Lucky Espresso</h3><span class="price">5.25</span></li><li class="menu-item"><h3>Lucky Americano</h3><span class="price">6.50</span></li></ul>
+<section class="mx-panel wrap" id="signatures" data-cat="signatures">
+  <div class="mx-head">
+    <h2>Signatures</h2>
+    <p>House creations you’ll only find at Lucky’s.</p>
+  </div>
+  <div class="mx-grid">
+    <div class="mx-feature mx-feature--cover">
+      <div class="mx-feature-text"><span>Signatures</span><strong>Coffee or matcha</strong></div>
+      <img src="../assets/img/three-drinks.jpg" alt="Two iced lattes and an iced matcha on a table at Lucky&#x27;s" width="1600" height="889" loading="lazy" style="object-position:45% 50%">
+    </div>
+    <ul class="mx-items">
+      <li class="mx-card"><h3>Lucky-misu / Matcha-misu</h3><div class="mx-foot"><span class="mx-price">$10</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Lucky-misu / Matcha-misu online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Cinnamon Bun Iced Latte / Matcha</h3><div class="mx-foot"><span class="mx-price">$9</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Cinnamon Bun Iced Latte / Matcha online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Strawberry Shortcake Matcha</h3><div class="mx-foot"><span class="mx-price">$9</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Strawberry Shortcake Matcha online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Lucky Espresso</h3><div class="mx-foot"><span class="mx-price">$5.25</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Lucky Espresso online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Lucky Americano</h3><div class="mx-foot"><span class="mx-price">$6.50</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Lucky Americano online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+    </ul>
   </div>
 </section>
-<section class="menu-section" id="refreshments">
-  <div class="wrap">
-    <div class="menu-head"><h2>Refreshments</h2></div>
-    <ul class="menu-list"><li class="menu-item"><h3>Iced Lemonade</h3><span class="price">5</span></li><li class="menu-item"><h3>Coconut Water</h3><span class="price">5.50</span></li><li class="menu-item"><h3>Sparkling Water</h3><span class="price">4.40</span></li><li class="menu-item"><h3>Still Water</h3><span class="price">4.40</span></li><li class="menu-item"><h3>Hot Tea</h3><span class="price">4.50</span><p>English Breakfast / Chamomile Citron / Blueberry Merlot</p></li></ul>
+<section class="mx-panel wrap flip" id="refreshments" data-cat="refreshments">
+  <div class="mx-head">
+    <h2>Refreshments</h2>
+    <p>Something light alongside your coffee.</p>
+  </div>
+  <div class="mx-grid">
+    <div class="mx-feature mx-feature--cover">
+      <div class="mx-feature-text"><span>Refreshments</span><strong>Cool down</strong></div>
+      <img src="../assets/img/water-bottle.jpg" alt="A hand holding a chilled glass bottle of water" width="1066" height="1600" loading="lazy">
+    </div>
+    <ul class="mx-items">
+      <li class="mx-card"><h3>Iced Lemonade</h3><div class="mx-foot"><span class="mx-price">$5</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Iced Lemonade online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Coconut Water</h3><div class="mx-foot"><span class="mx-price">$5.50</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Coconut Water online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Sparkling Water</h3><div class="mx-foot"><span class="mx-price">$4.40</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Sparkling Water online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Still Water</h3><div class="mx-foot"><span class="mx-price">$4.40</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Still Water online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Hot Tea</h3><p>English Breakfast / Chamomile Citron / Blueberry Merlot</p><div class="mx-foot"><span class="mx-price">$4.50</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Hot Tea online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+    </ul>
   </div>
 </section>
-<section class="menu-section" id="extras">
-  <div class="wrap">
-    <div class="menu-head"><h2>Extras</h2></div>
-    <ul class="menu-list"><li class="menu-item"><h3>Size Up</h3><span class="price">1.25</span></li><li class="menu-item"><h3>Extra Shot</h3><span class="price">1.50</span></li><li class="menu-item"><h3>Cold Foam</h3><span class="price">1.25</span></li><li class="menu-item"><h3>Alternative Milk</h3><span class="price">.75</span><p>2% / Pistachio / Almond / Oat</p></li><li class="menu-item"><h3>Syrup</h3><span class="price">.75</span><p>Vanilla / Caramel / Pistachio / Lavender / Hazelnut / Salted Caramel / Strawberry</p></li></ul>
+<section class="mx-panel wrap" id="bakery" data-cat="bakery">
+  <div class="mx-head">
+    <h2>Bakery</h2>
+    <p>Pastries to go with whatever’s in your cup.</p>
+  </div>
+  <div class="mx-grid">
+    <div class="mx-feature mx-feature--cover">
+      <div class="mx-feature-text"><span>Bakery</span><strong>Fresh from the case</strong></div>
+      <img src="../assets/img/palm-cheers.jpg" alt="Friends holding Lucky&#x27;s drinks and a chocolate chip cookie" width="1065" height="1600" loading="lazy" style="object-position:60% 62%">
+    </div>
+    <ul class="mx-items">
+      <li class="mx-card"><h3>Chocolate Chip Cookie</h3><div class="mx-foot"><span class="mx-price">$3.50</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Chocolate Chip Cookie online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Spinach &amp; Feta Croissant</h3><div class="mx-foot"><span class="mx-price">$5.50</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Spinach &amp; Feta Croissant online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Butter Croissant</h3><div class="mx-foot"><span class="mx-price">$4</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Butter Croissant online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Tomato &amp; Olive Puff</h3><div class="mx-foot"><span class="mx-price">$5.50</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Tomato &amp; Olive Puff online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Croissant Doughnut</h3><div class="mx-foot"><span class="mx-price">$5.50</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Croissant Doughnut online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Sweet Cheese Danish</h3><div class="mx-foot"><span class="mx-price">$5</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Sweet Cheese Danish online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Chocolate Croissant</h3><div class="mx-foot"><span class="mx-price">$4</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Chocolate Croissant online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+      <li class="mx-card"><h3>Matcha Poundcake</h3><div class="mx-foot"><span class="mx-price">$5</span><a class="mx-order" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener" aria-label="Order Matcha Poundcake online">Order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+    </ul>
   </div>
 </section>
-<section class="menu-section" id="bakery">
-  <div class="wrap">
-    <div class="menu-head"><h2>Bakery</h2></div>
-    <ul class="menu-list"><li class="menu-item"><h3>Chocolate Chip Cookie</h3><span class="price">3.50</span></li><li class="menu-item"><h3>Spinach &amp; Feta Croissant</h3><span class="price">5.50</span></li><li class="menu-item"><h3>Butter Croissant</h3><span class="price">4</span></li><li class="menu-item"><h3>Tomato &amp; Olive Puff</h3><span class="price">5.50</span></li><li class="menu-item"><h3>Croissant Doughnut</h3><span class="price">5.50</span></li><li class="menu-item"><h3>Sweet Cheese Danish</h3><span class="price">5</span></li><li class="menu-item"><h3>Chocolate Croissant</h3><span class="price">4</span></li><li class="menu-item"><h3>Matcha Poundcake</h3><span class="price">5</span></li></ul>
+<section class="mx-panel wrap flip" id="extras" data-cat="extras">
+  <div class="mx-head">
+    <h2>Extras</h2>
+    <p>Add-ons for any drink.</p>
+  </div>
+  <div class="mx-grid">
+    <div class="mx-feature mx-feature--cover">
+      <div class="mx-feature-text"><span>Extras</span><strong>Make it yours</strong></div>
+      <img src="../assets/img/espresso-grounds.jpg" alt="Fresh espresso grounds falling into a portafilter" width="1600" height="1280" loading="lazy">
+    </div>
+    <ul class="mx-items">
+      <li class="mx-card"><h3>Size Up</h3><div class="mx-foot"><span class="mx-price">+$1.25</span><span class="mx-order mx-order--note">Add-on</span></div></li>
+      <li class="mx-card"><h3>Extra Shot</h3><div class="mx-foot"><span class="mx-price">+$1.50</span><span class="mx-order mx-order--note">Add-on</span></div></li>
+      <li class="mx-card"><h3>Cold Foam</h3><div class="mx-foot"><span class="mx-price">+$1.25</span><span class="mx-order mx-order--note">Add-on</span></div></li>
+      <li class="mx-card"><h3>Alternative Milk</h3><p>2% / Pistachio / Almond / Oat</p><div class="mx-foot"><span class="mx-price">+$.75</span><span class="mx-order mx-order--note">Add-on</span></div></li>
+      <li class="mx-card"><h3>Syrup</h3><p>Vanilla / Caramel / Pistachio / Lavender / Hazelnut / Salted Caramel / Strawberry</p><div class="mx-foot"><span class="mx-price">+$.75</span><span class="mx-order mx-order--note">Add-on</span></div></li>
+    </ul>
   </div>
 </section>
-<p class="menu-note">Prices in USD. Subject to applicable tax.</p>
-<div class="menu-cta"><a class="btn" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener">Order Online <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+</div>
+<div class="mx-end">
+  <p>Prices in USD. Subject to applicable tax.</p>
+  <a class="btn btn--light" href="https://luckys-north-miami-beach.cloveronline.com/" target="_blank" rel="noopener">Order Online <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
 </main>
 <footer class="site-footer">
   <div class="wrap">
@@ -129,6 +223,6 @@
   </div>
   <div class="footer-bottom"><div class="wrap"><span>© <span id="year">2026</span> Lucky's Espresso &amp; Matcha Bar</span><span>Pickup only · North Miami Beach</span></div></div>
 </footer>
-<script src="../js/main.js" defer></script>
+<script src="../js/main.js?v=3" defer></script>
 </body>
 </html>
